@@ -15,6 +15,7 @@ import java.util.Date;
 public class Atencion {
 
     @ManyToOne
+    @JoinColumn(name = "paciente_id", referencedColumnName = "id")
     private Paciente paciente;
 
     @Id

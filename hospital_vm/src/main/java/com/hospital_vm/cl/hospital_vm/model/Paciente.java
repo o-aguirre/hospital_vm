@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "paciente")
@@ -32,4 +33,10 @@ public class Paciente {
 
     @Column(nullable = false)
     private String correo;
+
+    /*
+    @OneToMany
+    @JoinColumn(name = "paciente_id", referencedColumnName = "id")
+    private List<Atencion> atencion;
+     */
 }
